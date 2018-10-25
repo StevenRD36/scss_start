@@ -1,0 +1,47 @@
+@import '_colors';
+
+@mixin border($width,$style){
+    border:$width $style $primary-color-green-green;
+}
+
+%dotted-border{
+    @include border(1px,dotted);
+}
+
+body{
+    background-color: $primary-color-chartreuse;
+    div{
+        @include border(2px,solid) ;
+        #something{
+            padding: 2px;
+            background-color: $primary-color-moss;
+        }
+        #somethingelse{
+             @extend #something;
+              width: 200px;
+            @extend %dotted-border;  
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            li{
+                list-style: none;
+            }
+        }
+        @for $i from 1 through 6 {
+            ul li:nth-child(#{$i}){
+                div{
+                    text-align: center;
+                    padding: 20px;
+                    display: inline;
+                    margin: 2px;
+                    background-color: $primary-color-lime;
+                }
+            }
+        }
+    }
+    h1 {
+        @include border(5px,solid);
+    }
+}

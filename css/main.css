@@ -1,0 +1,58 @@
+body div #somethingelse {
+  border: 1px dotted #20A152; }
+
+body {
+  background-color: #ABD037; }
+  body div {
+    border: 2px solid #20A152; }
+    body div #something, body div #somethingelse {
+      padding: 2px;
+      background-color: #489341; }
+    body div #somethingelse {
+      width: 200px; }
+    body div ul {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; }
+      body div ul li {
+        list-style: none; }
+    body div ul li:nth-child(1) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+    body div ul li:nth-child(2) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+    body div ul li:nth-child(3) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+    body div ul li:nth-child(4) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+    body div ul li:nth-child(5) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+    body div ul li:nth-child(6) div {
+      text-align: center;
+      padding: 20px;
+      display: inline;
+      margin: 2px;
+      background-color: #83C441; }
+  body h1 {
+    border: 5px solid #20A152; }
+
+/*# sourceMappingURL=main.css.map */
